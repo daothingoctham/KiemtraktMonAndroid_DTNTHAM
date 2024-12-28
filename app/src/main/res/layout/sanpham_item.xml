@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mã sản phẩm -->
+
+    <!-- Tên sản phẩm -->
+
+    <TextView
+        android:id="@+id/txtMaSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Mã SP"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Biểu tượng số lượng -->
+
+    <TextView
+        android:id="@+id/txtTenSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="140dp"
+        android:text="Tên SP"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSoLuong"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintTop_toBottomOf="@id/txtMaSP"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Số lượng -->
+    <TextView
+        android:id="@+id/txtSoLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/imgSoLuong"
+        app:layout_constraintBottom_toBottomOf="@id/imgSoLuong"/>
+
+    <!-- Biểu tượng đơn giá -->
+    <ImageView
+        android:id="@+id/imgDonGia"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintTop_toBottomOf="@id/imgSoLuong"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Đơn giá -->
+    <TextView
+        android:id="@+id/txtDonGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15000"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/imgDonGia"
+        app:layout_constraintBottom_toBottomOf="@id/imgDonGia"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
